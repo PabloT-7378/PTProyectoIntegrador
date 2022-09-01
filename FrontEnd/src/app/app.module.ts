@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BarradeinicioComponent } from './components/barradeinicio/barradeinicio.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercademiComponent } from './components/acercademi/acercademi.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AcercademiComponent } from './components/acercademi/acercademi.componen
     HeaderComponent,
     BarradeinicioComponent,
     BannerComponent,
-    AcercademiComponent
+    AcercademiComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,

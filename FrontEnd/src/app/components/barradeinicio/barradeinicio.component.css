@@ -1,0 +1,65 @@
+.logoAP {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .espacio {
+    flex: 1;
+  }
+
+  .logoAP img {
+    margin: 0 10px;
+  }
+
+  .logoAP #logo-facebook {
+    height: 40px;
+    margin: 0 8px;
+    color: rgb(255, 255, 255);
+  }
+
+  .logoAP #logo-github {
+    height: 40px;
+    margin: 0 8px;
+    color: rgb(255, 255, 255);
+  }
+
+  .logoAP #logo-instagram {
+    height: 40px;
+    margin: 0 8px;
+    color: rgb(255, 255, 255);
+  }
+
+  .logoAP #logo-linkedin {
+    height: 40px;
+    margin: 0 8px;
+    color: rgb(255, 255, 255);
+  }
+
+  .logoAP #login-inicio {
+    margin: 0 8px;
+    border-radius: 0px;
+    border-color: white;
+    background-color: white;
+  }
+
+  .logoAP #logo-facebook:hover,
+  .logoAP #logo-github:hover,
+  .logoAP #logo-instagram:hover,
+  .logoAP #logo-linkedin:hover {
+    opacity: 0.9;
+    color: black;
+  }
+
+  .logoAP #login-inicio:hover {
+    opacity: 0.9;
+    background-color: black;
+    color: white;
+  }

@@ -1,0 +1,9 @@
+.container-fluid {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

@@ -1,27 +1,31 @@
 <div class="container-fluid">
-    <div class="row">
-      <h1>Proyectos</h1>
-      <div class="proyecto">
-        <h3>proyecto</h3> - <h4>fecha</h4> - <a href=""></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate harum reiciendis aut alias ducimus, similique et repudiandae explicabo quam dignissimos. Asperiores, quo eius deleniti modi quasi numquam provident perferendis.</p>
-        <img src="../../../assets/" alt="">
-      </div>
-      <div class="proyecto">
-        <h3>proyecto</h3> - <h4>fecha</h4> - <a href=""></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate harum reiciendis aut alias ducimus, similique et repudiandae explicabo quam dignissimos. Asperiores, quo eius deleniti modi quasi numquam provident perferendis.</p>
-        <img src="../../../assets/" alt="">
-      </div>
-      <div class="proyecto">
-        <h3>proyecto</h3> - <h4>fecha</h4> - <a href=""></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate harum reiciendis aut alias ducimus, similique et repudiandae explicabo quam dignissimos. Asperiores, quo eius deleniti modi quasi numquam provident perferendis.</p>
-        <img src="../../../assets/" alt="">
-      </div>
-      <div class="proyecto">
-        <h3>proyecto</h3> - <h4>fecha</h4> - <a href=""></a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate harum reiciendis aut alias ducimus, similique et repudiandae explicabo quam dignissimos. Asperiores, quo eius deleniti modi quasi numquam provident perferendis.</p>
-        <img src="../../../assets/" alt="">
-      </div>
-  
+  <div class="row">
+    <h1>Proyectos</h1>
+    <div class="col-lg-2">
+      <button type="button" class="btn btn-info" routerLink="/nuevoproyec" *ngIf="isLogged">Agregar Proyecto</button>
     </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let Proyectos of proyectos">
+            <td>{{Proyectos.nombreProyec}}</td>
+            <td>{{Proyectos.descProyec}}</td>
+            <td>{{Proyectos.imagenProyec}}</td>
+            <td *ngIf="isLogged">
+              <button class="btn btn-secondary" routerLink="/editproyec/{{Proyectos.id}}">
+                <i class="bi bi-pencil-fill" title="Editar"></i>
+              </button>
+            </td>
+            <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                <i class="bi bi-trash-fill" title="Eliminar"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   </div>
   

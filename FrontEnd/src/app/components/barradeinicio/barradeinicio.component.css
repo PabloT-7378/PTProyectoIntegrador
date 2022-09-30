@@ -50,6 +50,13 @@
     background-color: white;
   }
 
+  .logoAP #login-fin {
+    margin: 0 8px;
+    border-radius: 0px;
+    border-color: white;
+    background-color: white;
+  }
+
   .logoAP #logo-facebook:hover,
   .logoAP #logo-github:hover,
   .logoAP #logo-instagram:hover,
@@ -58,7 +65,8 @@
     color: black;
   }
 
-  .logoAP #login-inicio:hover {
+  .logoAP #login-inicio:hover,
+  .logoAP #login-fin:hover {
     opacity: 0.9;
     background-color: black;
     color: white;

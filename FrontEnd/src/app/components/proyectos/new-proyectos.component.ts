@@ -12,7 +12,7 @@ export class NewProyectosComponent implements OnInit {
 
   nombreProyec: string;
   descProyec: string;
-  imagenProyec: string;
+  
 
   constructor(private proyectosService: ProyectosService, private router: Router) { }
 
@@ -20,7 +20,7 @@ export class NewProyectosComponent implements OnInit {
   }
 
   onCreate(): void {
-    const proyectos = new Proyectos(this.nombreProyec, this.descProyec, this.imagenProyec);
+    const proyectos = new Proyectos(this.nombreProyec, this.descProyec);
     this.proyectosService.save(proyectos).subscribe(
       data => {
       alert("Proyecto añadido");

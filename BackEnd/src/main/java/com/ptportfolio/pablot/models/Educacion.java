@@ -13,16 +13,14 @@ public class Educacion {
     private String tituloEdu;
     private String fechaEdu;
     private String descEdu;
-    private String imagenEdu;
-
+    
     public Educacion() {
     }
 
-    public Educacion(String tituloEdu, String fechaEdu, String descEdu, String imagenEdu) {
+    public Educacion(String tituloEdu, String fechaEdu, String descEdu) {
         this.tituloEdu = tituloEdu;
         this.fechaEdu = fechaEdu;
         this.descEdu = descEdu;
-        this.imagenEdu = imagenEdu;
     }
 
     public int getId() {
@@ -55,14 +53,6 @@ public class Educacion {
 
     public void setDescEdu(String descEdu) {
         this.descEdu = descEdu;
-    }
-
-    public String getImagenEdu() {
-        return imagenEdu;
-    }
-
-    public void setImagenEdu(String imagenEdu) {
-        this.imagenEdu = imagenEdu;
     }
     
 }

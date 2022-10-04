@@ -12,15 +12,13 @@ public class Proyectos {
     private int id;
     private String nombreProyec;
     private String descProyec;
-    private String imagenProyec;
-
+    
     public Proyectos() {
     }
 
-    public Proyectos(String nombreProyec, String descProyec, String imagenProyec) {
+    public Proyectos(String nombreProyec, String descProyec) {
         this.nombreProyec = nombreProyec;
         this.descProyec = descProyec;
-        this.imagenProyec = imagenProyec;
     }
 
     public int getId() {
@@ -47,13 +45,5 @@ public class Proyectos {
         this.descProyec = descProyec;
     }
 
-    public String getImagenProyec() {
-        return imagenProyec;
-    }
-
-    public void setImagenProyec(String imagenProyec) {
-        this.imagenProyec = imagenProyec;
-    }
-
-    
+        
 }

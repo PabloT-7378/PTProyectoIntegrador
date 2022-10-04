@@ -10,17 +10,14 @@ public class DtoExperiencia {
     private String fechaExp;
     @NotBlank
     private String descExp;
-    @NotBlank
-    private String imagenExp;
-
+    
     public DtoExperiencia() {
     }
 
-    public DtoExperiencia(String tituloExp, String fechaExp, String descExp, String imagenExp) {
+    public DtoExperiencia(String tituloExp, String fechaExp, String descExp) {
         this.tituloExp = tituloExp;
         this.fechaExp = fechaExp;
         this.descExp = descExp;
-        this.imagenExp = imagenExp;
     }
 
     public String getTituloExp() {
@@ -47,11 +44,4 @@ public class DtoExperiencia {
         this.descExp = descExp;
     }
 
-    public String getImagenExp() {
-        return imagenExp;
-    }
-
-    public void setImagenExp(String imagenExp) {
-        this.imagenExp = imagenExp;
-    }
 }

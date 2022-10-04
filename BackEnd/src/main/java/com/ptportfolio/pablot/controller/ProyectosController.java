@@ -56,7 +56,7 @@ public class ProyectosController {
         if(proyectosService.existsByNombreProyec(dtoProyectos.getNombreProyec()))
             return new ResponseEntity(new Mensaje("Proyecto ya existe"), HttpStatus.BAD_REQUEST);
         
-        Proyectos proyectos = new Proyectos(dtoProyectos.getNombreProyec(), dtoProyectos.getDescProyec(), dtoProyectos.getImagenProyec());
+        Proyectos proyectos = new Proyectos(dtoProyectos.getNombreProyec(), dtoProyectos.getDescProyec());
         proyectosService.save(proyectos);
         
         return new ResponseEntity(new Mensaje("Proyecto agregado"), HttpStatus.OK);
@@ -76,8 +76,7 @@ public class ProyectosController {
         Proyectos proyectos = proyectosService.getOne(id).get();
         proyectos.setNombreProyec(dtoProyectos.getNombreProyec());
         proyectos.setDescProyec(dtoProyectos.getDescProyec());
-        proyectos.setImagenProyec(dtoProyectos.getImagenProyec());
-        
+                
         proyectosService.save(proyectos);
         return new ResponseEntity(new Mensaje("Proyectos actualizados"), HttpStatus.OK);
     }

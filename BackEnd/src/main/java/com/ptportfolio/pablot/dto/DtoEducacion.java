@@ -14,17 +14,14 @@ public class DtoEducacion {
     @NotBlank
     private String descEdu;
     
-    @NotBlank
-    private String imagenEdu;
-
+    
     public DtoEducacion() {
     }
 
-    public DtoEducacion(String tituloEdu, String fechaEdu, String descEdu, String imagenEdu) {
+    public DtoEducacion(String tituloEdu, String fechaEdu, String descEdu) {
         this.tituloEdu = tituloEdu;
         this.fechaEdu = fechaEdu;
         this.descEdu = descEdu;
-        this.imagenEdu = imagenEdu;
     }
 
     public String getTituloEdu() {
@@ -50,13 +47,6 @@ public class DtoEducacion {
     public void setDescEdu(String descEdu) {
         this.descEdu = descEdu;
     }
-
-    public String getImagenEdu() {
-        return imagenEdu;
-    }
-
-    public void setImagenEdu(String imagenEdu) {
-        this.imagenEdu = imagenEdu;
-    }    
+    
 }
 

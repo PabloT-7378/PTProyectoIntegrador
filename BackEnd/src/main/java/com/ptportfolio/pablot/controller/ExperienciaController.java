@@ -58,7 +58,7 @@ public class ExperienciaController {
             return new ResponseEntity(new Mensaje("Experiencia ya existe"), HttpStatus.BAD_REQUEST);
         
         Experiencia experiencia = new Experiencia(dtoExperiencia.getTituloExp(), dtoExperiencia.getFechaExp(), 
-                dtoExperiencia.getDescExp(), dtoExperiencia.getImagenExp());
+                dtoExperiencia.getDescExp());
         experienciaService.save(experiencia);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -79,8 +79,7 @@ public class ExperienciaController {
         experiencia.setTituloExp(dtoExperiencia.getTituloExp());
         experiencia.setFechaExp(dtoExperiencia.getFechaExp());
         experiencia.setDescExp(dtoExperiencia.getDescExp());
-        experiencia.setImagenExp(dtoExperiencia.getImagenExp());
-        
+                
         experienciaService.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
     }

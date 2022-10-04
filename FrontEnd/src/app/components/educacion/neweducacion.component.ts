@@ -12,15 +12,14 @@ export class NeweducacionComponent implements OnInit {
   tituloEdu: string;
   fechaEdu: string;
   descEdu: string;
-  imagenEdu: string;
-
+  
   constructor(private educacionService: EducacionService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void {
-    const educacion = new Educacion(this.tituloEdu, this.fechaEdu, this.descEdu, this.imagenEdu);
+    const educacion = new Educacion(this.tituloEdu, this.fechaEdu, this.descEdu);
     this.educacionService.save(educacion).subscribe(data => {
       alert("Educacion añadida");
       this.router.navigate(['']);

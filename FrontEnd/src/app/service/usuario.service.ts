@@ -8,7 +8,7 @@ import { usuario } from '../modelo/usuario.modelo';
 })
 
 export class UsuarioService {
-  URL = 'http://localhost:8080/usuario/';
+  URL = 'https://backendpt.herokuapp.com/usuario/';
 
   constructor(private http: HttpClient) { }
   public getUsuario(): Observable<usuario> {
